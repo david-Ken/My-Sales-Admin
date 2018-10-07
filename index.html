@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="css/main.css" />
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Sales Admin</title>
+</head>
+
+<body>
+  <!-- Navbar  -->
+
+  <nav>
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="#!" data-activates="mobile-nav" class="button-collapse">
+          <i class="material-icons">menu</i>
+        </a>
+
+        <ul class="hide-on-med-and-down">
+          <li>
+            <a href="#!">
+              <i class="material-icons">format_indent_increase</i>
+            </a>
+          </li>
+          <li>
+            <a href="#!" data-activates="navbar-dropdown-1" class="dropdown-button">
+              English<i class="material-icons right">arrow_drop_down</i>
+            </a>
+          </li>
+        </ul>
+
+        <form class=" hide-on-med-and-down" id="form1">
+          <div class="input-field" style="max-width: 400pt;">
+            <input id="search" type="search">
+            <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+            <i class="material-icons">close</i>
+            <div id="searchResults"></div>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Navbar Dropdown-->
+  <ul id="navbar-dropdown-1" class="dropdown-content">
+    <li><a href="" !>French</a></li>
+    <li><a href="" !>Spanish</a></li>
+    <li><a href="" !>Deutch</a></li>
+  </ul>
+
+
+
+  <!--
+
+  <div class="navbar-fixed ">
+    <nav>
+      <div class="nav-wrapper blue-grey">
+        <a href="#!" class="brand-logo" style="text-decoration:none">Bloggy</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="signup.php" class="btn waves-effect waves-light deep-orange lighten-2">Sign Up</a></li>
+          <li><a href="login.php" class="btn waves-effect waves-light deep-orange lighten-2">Login</a></li>
+          <li><a href="contactUs.php" class="btn waves-effect waves-light deep-orange lighten-2">Contact Us</a></li>
+
+        </ul>
+        <form class=" hide-on-med-and-down" id="form1">
+          <div class="input-field" style="max-width: 400pt;">
+            <input id="search" type="search">
+            <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+            <i class="material-icons">close</i>
+            <div id="searchResults"></div>
+          </div>
+        </form>
+
+      </div>
+    </nav>
+  </div>
+-->
+
+
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Custom JS & jQuery here
+      // Init Side Nav
+      $(".button-collapse").sideNav();
+      //Init Dropdown
+      $(".dropdown-button").dropdown();
+
+      //Init autocomplete
+      // Autocomplete
+      $('.autocomplete').autocomplete({
+        data: {
+          "Aruba": null,
+          "Cancun Mexico": null,
+          "Hawaii": null,
+          "Florida": null,
+          "California": null,
+          "Jamaica": null,
+          "Europe": null,
+          "The Bahamas": null,
+        }
+      });
+
+    });
+  </script>
+</body>
+
+</html>
