@@ -6,6 +6,8 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--Import materialize.css-->
   <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
   <link type="text/css" rel="stylesheet" href="css/main.css" />
 
   <!--Let browser know website is optimized for mobile-->
@@ -34,6 +36,7 @@
               English<i class="material-icons right">arrow_drop_down</i>
             </a>
           </li>
+
         </ul>
 
         <form class=" hide-on-med-and-down" id="form1">
@@ -41,9 +44,140 @@
             <input id="search" type="search">
             <label class="label-icon" for="search"><i class="material-icons">search</i></label>
             <i class="material-icons">close</i>
-            <div id="searchResults"></div>
           </div>
         </form>
+
+        <!-- SideNav -->
+        <ul class="side-nav" id="mobile-nav">
+          <li>
+            <div class="user-view">
+              <div class="background">
+                <img src="" alt="">
+              </div>
+              <a href="#!user"><img class="circle" src="img/user-img.jpg"></a>
+              <a href="#!name"><span class="white-text name">David Harrys</span></a>
+              <a href="#!email"><span class="white-text email">david@harrys.tech</span></a>
+            </div>
+          </li>
+          <li>
+            <div class="divider"></div>
+          </li>
+          <li>
+            <a href="#!" data-activates="dashboard-dropdown" class="dropdown-button">
+              <i class="material-icons left">dashboard</i>
+              Dashboard
+              <i class="material-icons right">keyboard_arrow_right</i>
+            </a>
+          </li>
+          <li>
+            <a href="#!" data-activates="layouts-dropdown" class="dropdown-button">
+              <i class="material-icons left">laptop_chromebook</i>
+              Layouts
+              <i class="material-icons right">keyboard_arrow_right</i>
+            </a>
+          </li>
+          <li>
+            <a href="#!" data-activates="pages-dropdown" class="dropdown-button">
+              <i class="fas fa-folder-open"></i>
+              Pages
+              <i class="material-icons right">keyboard_arrow_right</i>
+            </a>
+          </li>
+          <li>
+            <a href="#!">ELEMENTS</a>
+          </li>
+          <li>
+            <a href="#!" data-activates="ui-elements-dropdown" class="dropdown-button">
+              <i class="material-icons left">settings</i>
+              UI Elements
+              <i class="material-icons right">keyboard_arrow_right</i>
+            </a>
+          </li>
+          <li>
+            <a href="#!" data-activates="charts-dropdown" class="dropdown-button">
+              <i class="fas fa-chart-area"></i>
+              Charts
+              <i class="material-icons right">keyboard_arrow_right</i>
+            </a>
+          </li>
+          <li>
+            <a href="#!" data-activates="structure-dropdown" class="dropdown-button">
+              <i class="fas fa-cubes"></i>
+              Structure
+              <i class="material-icons right">keyboard_arrow_right</i>
+            </a>
+          </li>
+          <li>
+            <a href="#!" data-activates="widgets-dropdown" class="dropdown-button">
+              <i class="fas fa-gavel"></i>
+              Widgets
+              <i class="material-icons right">keyboard_arrow_right</i>
+            </a>
+          </li>
+          <li>
+            <a href="#!" data-activates="tables-dropdown" class="dropdown-button">
+              <i class="fas fa-th-list"></i>
+              Tables
+              <i class="material-icons right">keyboard_arrow_right</i>
+            </a>
+          </li>
+          <li>
+            <a href="#!" data-activates="form-dropdown" class="dropdown-button">
+              <i class="material-icons left">mode_edit</i>
+              Form stuff
+              <i class="material-icons right">keyboard_arrow_right</i>
+            </a>
+          </li>
+          <li>
+            <a href="#!">EXTRA</a>
+          </li>
+          <li>
+            <a href="#!" data-activates="email-dropdown" class="dropdown-button">
+              <i class="material-icons left">email</i>
+              Email <span class="new badge  custom-orange" data-badge-caption="Unread">4</span>
+              <i class="material-icons right">keyboard_arrow_right</i>
+            </a>
+          </li>
+          <li>
+            <a href="#!" data-activates="chat-dropdown" class="dropdown-button">
+              <i class="fas fa-comments"></i>
+              Chat
+              <i class="material-icons right">keyboard_arrow_right</i>
+            </a>
+          </li>
+          <li>
+            <a href="#!" data-activates="maps-dropdown" class="dropdown-button">
+              <i class="material-icons left">room</i>
+              Maps
+              <i class="material-icons right">keyboard_arrow_right</i>
+            </a>
+          </li>
+          <li>
+            <div class="divider"></div>
+          </li>
+          <li>
+            <a href="#!">Milestone
+              <div class="progress">
+                <div class="determinate light-green " style="width: 70%"></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#!">Release
+              <div class="progress">
+                <div class="determinate  " style="width: 70%"></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <div class="divider"></div>
+          </li>
+          <li>
+            <a href="#!">
+              Back
+              <i class="material-icons right">keyboard_arrow_right</i></a>
+          </li>
+        </ul>
 
       </div>
     </div>
@@ -59,62 +193,313 @@
 
 
 
-  <!--
 
-  <div class="navbar-fixed ">
-    <nav>
-      <div class="nav-wrapper blue-grey">
-        <a href="#!" class="brand-logo" style="text-decoration:none">Bloggy</a>
-        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="signup.php" class="btn waves-effect waves-light deep-orange lighten-2">Sign Up</a></li>
-          <li><a href="login.php" class="btn waves-effect waves-light deep-orange lighten-2">Login</a></li>
-          <li><a href="contactUs.php" class="btn waves-effect waves-light deep-orange lighten-2">Contact Us</a></li>
+  <!-- Section : Ecommerce -->
 
-        </ul>
-        <form class=" hide-on-med-and-down" id="form1">
-          <div class="input-field" style="max-width: 400pt;">
-            <input id="search" type="search">
-            <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-            <i class="material-icons">close</i>
-            <div id="searchResults"></div>
+  <section class="section section-ecommerce">
+
+    <div class="container">
+      <h5>Ecommerce Overview</h3>
+        <div class="row">
+          <!--card 1-->
+          <div class="col s12 m6 l3">
+            <div class="card horizontal hoverable">
+              <div class="card-image custom-red section">
+                <img src="img/money.svg" class="responsive-img">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <p>$ <span class="count">4590</span></p>
+                  <p class="custom-light-grey italic">Last Month sales</p>
+                </div>
+              </div>
+            </div>
           </div>
-        </form>
 
+          <!-- card 2-->
+          <div class="col s12 m6 l3">
+            <div class="card horizontal hoverable">
+              <div class="card-image custom-orange section">
+                <img src="img/new-products-label.svg" class="responsive-img">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <p><span class="count">360</span></p>
+                  <p class="custom-light-grey italic">New order received</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- card 3-->
+          <div class="col s12 m6 l3">
+            <div class="card horizontal hoverable">
+              <div class="card-image custom-green section">
+                <img src="img/delivery.svg" class="responsive-img">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <p><span class="count">1680</span></p>
+                  <p class="custom-light-grey italic">Total products</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--card 4-->
+          <div class="col s12 m6 l3">
+            <div class="card horizontal hoverable">
+              <div class="card-image custom-blue section">
+                <img src="img/eye.svg" class="responsive-img">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <p><span class="count">110500</span></p>
+                  <p class="custom-light-grey italic">Unigue visitors</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+
+  <!-- Section : Chart  & Team-->
+  <section class="section section-chart">
+    <div class="container">
+      <div class="row">
+        <!-- Chart -->
+        <div class="col s12 m6 l8">
+          <div class="card-panel">
+            <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+          </div>
+        </div>
+
+        <!-- Team -->
+        <div class="col s12 m6 l4">
+          <ul class="collapsible" data-collapsible="accordion">
+            <li>
+              <div class="collapsible-header custom-title-color "><i class="material-icons">people_outline</i>TEAM
+                MEMBERS</div>
+              <div class="collapsible-body">
+
+
+                <ul class="collection team-members-color">
+                  <li class="collection-item avatar">
+                    <img src="img/team-1.jpeg" alt="" class="circle">
+
+                    <p>Alex Moon <br>
+                      Brand Ambassador
+                    </p>
+                    <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                  </li>
+                  <li class="collection-item avatar">
+                    <img src="img/team-2.jpeg" alt="" class="circle">
+                    <p>Christy Alves <br>
+                      Sales Assistant
+                    </p>
+                    <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                  </li>
+                  <li class="collection-item avatar">
+                    <img src="img/team-3.jpeg" alt="" class="circle">
+                    <p>John Hallay <br>
+                      Financial Advisor
+                    </p>
+                    <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                  </li>
+                  <li class="collection-item avatar">
+                    <img src="img/team-4.jpeg" alt="" class="circle">
+                    <p>Ilona Carmen <br>
+                      Marketing Manager
+                    </p>
+                    <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                  </li>
+                </ul>
+
+
+
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header custom-title-color "><i class="material-icons">mail_outline</i>NEW
+                MESSAGES </div>
+              <div class="collapsible-body">
+
+
+                <ul class="collection team-members-color">
+                  <li class="collection-item avatar">
+                    <img src="img/team-5.jpg" alt="" class="circle">
+
+                    <p>David Walker <br>
+                      Ceo of Walt Tech
+                    </p>
+                    <a href="#modal1" class="modal-trigger secondary-content"><span class="new badge"
+                        data-badge-caption="Read"></span></a>
+                  </li>
+                  <li class="collection-item avatar">
+                    <img src="img/team-6.jpeg" alt="" class="circle">
+                    <p>Anna Lynn <br>
+                      Web Designer
+                    </p>
+                    <a href="#modal2" class="modal-trigger secondary-content"><span class="new badge"
+                        data-badge-caption="Read"></span></a>
+                  </li>
+
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header custom-title-color "><i class="material-icons">add_to_queue
+                </i>NEW CANDIDATES</div>
+              <div class="collapsible-body"></div>
+            </li>
+          </ul>
+        </div>
       </div>
-    </nav>
+    </div>
+  </section>
+
+  <!-- Section : Team -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Modal -->
+  <div id="modal1" class="modal">
+    <div class="card horizontal">
+      <div class="card-image">
+        <img src="img/new-contact-1.jpg" class="responsive-img">
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field s12">
+                <i class="material-icons prefix active">mail</i>
+                <input id="icon_prefix" type="text" class="validate" disabled value="Hi Kev, I just wanna let you know : investors agreed to the proposal. It's a deal ! ">
+                <label for="icon_prefix">Message</label>
+              </div>
+              <div class="input-field s12">
+                <i class="material-icons prefix active">Answer</i>
+                <input id="icon_prefix" type="text" class="validate" placeholder="Reply to kelvin ...">
+                <label for="icon_prefix">Answer</label>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="card-action">
+          <a class="waves-effect waves-light btn right modal1-action">Reply</a>
+        </div>
+      </div>
+    </div>
   </div>
--->
 
 
+
+  <div id="modal2" class="modal">
+    <div class="card horizontal">
+      <div class="card-image">
+        <img src="img/new-contact-2.jpeg" class="responsive-img">
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field s12">
+                <i class="material-icons prefix active">mail</i>
+                <input id="icon_prefix" type="text" class="validate" disabled value="Hello kevin, I redesigned the entire website of the company. Check it out ">
+                <label for="icon_prefix">Message</label>
+              </div>
+              <div class="input-field s12">
+                <i class="material-icons prefix active">Answer</i>
+                <input id="icon_prefix" type="text" class="validate" placeholder="Reply to kelvin ...">
+                <label for="icon_prefix">Answer</label>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="card-action">
+          <a class="waves-effect waves-light btn right modal2-action">Reply</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!--Import jQuery before materialize.js-->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/canvasjs.min.js"></script>
+  <script type="text/javascript" src="js/chart.js"></script>
   <script>
-    $(document).ready(function () {
-      // Custom JS & jQuery here
-      // Init Side Nav
-      $(".button-collapse").sideNav();
-      //Init Dropdown
-      $(".dropdown-button").dropdown();
+    setTimeout(function () {
 
-      //Init autocomplete
-      // Autocomplete
-      $('.autocomplete').autocomplete({
-        data: {
-          "Aruba": null,
-          "Cancun Mexico": null,
-          "Hawaii": null,
-          "Florida": null,
-          "California": null,
-          "Jamaica": null,
-          "Europe": null,
-          "The Bahamas": null,
-        }
+      //alert(1);
+      $(document).ready(function () {
+        // Custom JS & jQuery here
+        // Init Side Nav
+        $(".button-collapse").sideNav();
+        //Init Dropdown
+        $(".dropdown-button").dropdown();
+        //Init Modal
+        $('.modal').modal();
+
+
+        //Init autocomplete
+        // Autocomplete
+        $('.autocomplete').autocomplete({
+          data: {
+            "Aruba": null,
+            "Cancun Mexico": null,
+            "Hawaii": null,
+            "Florida": null,
+            "California": null,
+            "Jamaica": null,
+            "Europe": null,
+            "The Bahamas": null,
+          }
+        });
+
+
+        // Counter
+        $('.count').each(function () {
+          $(this).prop('Counter', 0).animate({
+            Counter: $(this).text()
+          }, {
+            duration: 1000,
+            easing: 'swing',
+            step: function (now) {
+              $(this).text(Math.ceil(now));
+            }
+          });
+        });
+
+        $('.modal1-action').click(function () {
+          $('#modal1').modal('close');
+          Materialize.toast('Message sent ', 3000);
+        });
+
+        $('.modal2-action').click(function () {
+          $('#modal2').modal('close');
+          Materialize.toast('Message sent ', 3000);
+        });
+
       });
 
-    });
+
+
+    }, 1000);
   </script>
 </body>
 

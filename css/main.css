@@ -5,3 +5,61 @@
 #form1 input[type='search'] {
     height: unset !important;
 }
+
+nav .input-field label {
+    top: -12%;
+
+}
+
+.section-ecommerce .card-image {
+    padding: 5%;
+}
+
+.custom-red {
+    background-color: #FE5E3A;
+}
+
+.custom-orange {
+    background-color: #FF9501 !important;
+}
+
+.custom-green {
+    background-color: #76C80E;
+}
+
+.custom-blue {
+    background-color: #1FBBA6;
+}
+
+.custom-grey {
+    background-color: #4C4743;
+}
+
+.custom-light-grey {
+    color: #A9A9A9 !important;
+}
+
+.custom-body-grey {
+    background-color: #EFEFEF;
+}
+
+.custom-title-color {
+    color: #9D9D9D;
+}
+
+.team-members-color {
+    color: #979797;
+}
+
+.card.horizontal .card-image {
+    max-width: 30%;
+}
+
+.italic {
+    font-style: italic !important;
+}
+
+#modal1 .card,
+#modal2 .card {
+    margin: 0 !important;
+}
