@@ -1,3 +1,7 @@
+body {
+    background-color: #F1F1F1;
+}
+
 #form1 {
     margin-left: 180px;
 }
@@ -51,6 +55,22 @@ nav .input-field label {
     color: #979797;
 }
 
+.table-green-color {
+    background-color: #76C710 !important;
+}
+
+.table-green-darken-color {
+    background-color: #76C80E !important;
+}
+
+.table-orange-color {
+    background-color: #FF9600 !important;
+}
+
+.table-gray-color {
+    background-color: #75726D !important;
+}
+
 .card.horizontal .card-image {
     max-width: 30%;
 }
@@ -62,4 +82,55 @@ nav .input-field label {
 #modal1 .card,
 #modal2 .card {
     margin: 0 !important;
+}
+
+.section-chart .collapsible,
+.section-recent-order .collapsible {
+    background-color: #fff;
+}
+
+
+.section-recent-order table a .new {
+    border-radius: 10px !important;
+}
+
+.section-recent-order table td,
+.section-recent-order table th {
+    text-align: center !important;
+}
+
+
+.section-recent-order table a .badge {
+    padding: 4px 6px;
+    float: unset;
+}
+
+
+.my-wrapper {
+    position: relative;
+    background: url(../img/weather-background.jpeg);
+    padding: 0 !important;
+    background-size: cover;
+    background-position: center;
+    min-width: 100%;
+}
+
+.primary-overlay {
+    /*  position: absolute; */
+    top: 0;
+    left: 0;
+    background: rgba(74, 181, 153, 0.7);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 10%;
+}
+
+/*  weather */
+.weather-img {
+    width: 35%;
+}
+
+.weather-description {
+    text-transform: capitalize;
 }

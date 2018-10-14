@@ -321,8 +321,9 @@
 
               </div>
             </li>
+            <!-- Message -->
             <li>
-              <div class="collapsible-header custom-title-color "><i class="material-icons">mail_outline</i>NEW
+              <div class="collapsible-header  active custom-title-color "><i class="material-icons">mail_outline</i>NEW
                 MESSAGES </div>
               <div class="collapsible-body">
 
@@ -332,7 +333,7 @@
                     <img src="img/team-5.jpg" alt="" class="circle">
 
                     <p>David Walker <br>
-                      Ceo of Walt Tech
+                      CEO of Walt Tech
                     </p>
                     <a href="#modal1" class="modal-trigger secondary-content"><span class="new badge"
                         data-badge-caption="Read"></span></a>
@@ -349,6 +350,7 @@
                 </ul>
               </div>
             </li>
+            <!-- Candidates -->
             <li>
               <div class="collapsible-header custom-title-color "><i class="material-icons">add_to_queue
                 </i>NEW CANDIDATES</div>
@@ -360,8 +362,112 @@
     </div>
   </section>
 
-  <!-- Section : Team -->
+  <!-- Section : Recent Order -->
+  <section class="section section-recent-order">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m6 l9">
+          <ul class="collapsible" data-collapsible="accordion">
+            <li>
+              <div class="collapsible-header active">
+                <i class="  material-icons">local_shipping</i>
+                <div class="input-field col s12 m12 l4">
+                  <select multiple>
+                    <option value="" disabled selected>RECENT ORDER</option>
+                    <option value="1">Sort By Prices</option>
+                    <option value="2">Sort By Customer </option>
+                    <option value="3">Sort By Status</option>
+                  </select>
+                </div>
+              </div>
+              <div class="collapsible-body">
+                <table class="highlight">
+                  <thead>
+                    <tr>
+                      <th>Image</th>
+                      <th>Product Code</th>
+                      <th>Customer</th>
+                      <th>Purchased On</th>
+                      <th>Status </th>
+                      <th>Tracking No#</th>
+                    </tr>
+                  </thead>
 
+                  <tbody>
+                    <tr>
+                      <td>Alvin</td>
+                      <td>3BSD56</td>
+                      <td>Antuhin Jisan</td>
+                      <td>27 Sep 2015</td>
+                      <td><a href="#!"><span class="new badge table-green-color" data-badge-caption="Paid"></span></a></td>
+                      <td>#BG6R9853LP</td>
+                    </tr>
+                    <tr>
+                      <td>Alan</td>
+                      <td>3BH87G</td>
+                      <td>Angelina Wrona</td>
+                      <td>08 Sep 2015</td>
+                      <td><a href="#!"><span class="new badge table-orange-color" data-badge-caption="Pending"></span></a></td>
+                      <td>#368QRM83B</td>
+                    </tr>
+                    <tr>
+                      <td>Jonathan</td>
+                      <td>4D3GHT</td>
+                      <td>Natali Ishchuk</td>
+                      <td>25 Aug 2015</td>
+                      <td><a href="#!"><span class="new badge table-green-darken-color" data-badge-caption="Paid"></span></a></td>
+                      <td>#AXZ6F58T3V</td>
+                    </tr>
+                    <tr>
+                      <td>Jonathan</td>
+                      <td>5D4H3G</td>
+                      <td>Chitush Pakhi</td>
+                      <td>27 Sep 2015</td>
+                      <td><a href="#!"><span class="new badge table-gray-color" data-badge-caption="Failed"></span></a></td>
+                      <td>#SD89HK561</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col s12 m6 l3 weather-container">
+          <div class="col s12 m6 l9 my-wrapper z-depht-3">
+            <div class="primary-overlay white-text">
+              <div>
+                <ul>
+                  <li class="left"> <i class="material-icons left">location_on</i> <span class="left weather-country-name">Paris</span></li>
+                  <li class="right"><span class="">°c</span></li>
+                </ul>
+              </div>
+
+              <div>
+                <!-- Weather icon added using jquery-->
+                <img src=" " alt="" class="weather-img left">
+                <ul class="right">
+
+                  <li> <span class="weather-value">20 °</span></li>
+                  <li> <span class="weather-description">Cloudly</span></li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+          <!---
+          <div class="col s12 m6 l3">
+            <ul>
+              <li>aaa</li>
+              <li>bbb</li>
+              <li>ccc</li>
+            </ul>
+          </div>
+        -->
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 
@@ -377,6 +483,7 @@
 
 
   <!-- Modal -->
+  <!-- Modal 1 -->
   <div id="modal1" class="modal">
     <div class="card horizontal">
       <div class="card-image">
@@ -393,7 +500,7 @@
               </div>
               <div class="input-field s12">
                 <i class="material-icons prefix active">Answer</i>
-                <input id="icon_prefix" type="text" class="validate" placeholder="Reply to kelvin ...">
+                <input id="icon_prefix" type="text" class="validate" placeholder="Reply to David ...">
                 <label for="icon_prefix">Answer</label>
               </div>
             </div>
@@ -407,7 +514,7 @@
   </div>
 
 
-
+  <!-- Modal 2 -->
   <div id="modal2" class="modal">
     <div class="card horizontal">
       <div class="card-image">
@@ -424,7 +531,7 @@
               </div>
               <div class="input-field s12">
                 <i class="material-icons prefix active">Answer</i>
-                <input id="icon_prefix" type="text" class="validate" placeholder="Reply to kelvin ...">
+                <input id="icon_prefix" type="text" class="validate" placeholder="Reply to Anna ...">
                 <label for="icon_prefix">Answer</label>
               </div>
             </div>
@@ -442,6 +549,8 @@
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script type="text/javascript" src="js/canvasjs.min.js"></script>
   <script type="text/javascript" src="js/chart.js"></script>
+  <script type="text/javascript" src="js/axios.min.js"></script>
+  <script type="text/javascript" src="js/weather.js"></script>
   <script>
     setTimeout(function () {
 
@@ -454,6 +563,8 @@
         $(".dropdown-button").dropdown();
         //Init Modal
         $('.modal').modal();
+        // Init Select
+        $('select').material_select();
 
 
         //Init autocomplete
@@ -501,6 +612,7 @@
 
     }, 1000);
   </script>
+
 </body>
 
 </html>
