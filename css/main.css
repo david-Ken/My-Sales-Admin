@@ -129,8 +129,26 @@ nav .input-field label {
 /*  weather */
 .weather-img {
     width: 35%;
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    padding: 5px;
 }
 
 .weather-description {
     text-transform: capitalize;
+}
+
+.weather-value {
+    font-weight: bold;
+    font-size: 5em;
+}
+
+
+/* SVG WORDL MAP */
+
+svg:not(:root) {
+    overflow: hidden;
+    width: 100%;
+    height: inherit;
 }
