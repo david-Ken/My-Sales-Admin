@@ -339,6 +339,191 @@ window.onload = function () {
 
 
 
+    /*****  Apex Chart JS scetion   */
+
+    // Apex Chart 1
+
+    var options = {
+        chart: {
+            height: 230,
+            type: 'radialBar',
+        },
+        plotOptions: {
+            circle: {
+                dataLabels: {
+                    showOn: 'hover'
+                }
+            }
+        },
+        series: [44, 55, 67, 83],
+        labels: ['United States', 'Africa', 'Europe', 'Asia'],
+
+    }
+
+
+    // Apex Chart 2
+
+    var options2 = {
+        chart: {
+            height: 230,
+            type: 'radialBar',
+            toolbar: {
+                show: true
+            }
+        },
+        plotOptions: {
+            radialBar: {
+                startAngle: -135,
+                endAngle: 225,
+                hollow: {
+                    margin: 0,
+                    size: '70%',
+                    background: '#fff',
+                    image: undefined,
+                    imageOffsetX: 0,
+                    imageOffsetY: 0,
+                    position: 'front',
+                    dropShadow: {
+                        enabled: true,
+                        top: 3,
+                        left: 0,
+                        blur: 4,
+                        opacity: 0.24
+                    }
+                },
+                track: {
+                    background: '#fff',
+                    strokeWidth: '67%',
+                    margin: 0, // margin is in pixels
+                    dropShadow: {
+                        enabled: true,
+                        top: -3,
+                        left: 0,
+                        blur: 4,
+                        opacity: 0.35
+                    }
+                },
+
+                dataLabels: {
+                    showOn: 'always',
+                    name: {
+                        offsetY: -20,
+                        show: true,
+                        color: '#888',
+                        fontSize: '17px'
+                    },
+                    value: {
+                        formatter: function (val) {
+                            return 90 + ' %';
+                        },
+                        color: '#111',
+                        fontSize: '36px',
+                        show: true,
+                    }
+                }
+            }
+        },
+        fill: {
+            type: 'gradient',
+            colors: ['#FD6F00']
+        },
+        series: [75],
+        stroke: {
+            lineCap: 'round'
+        },
+        labels: ['France'],
+    }
+
+    // Apex Chart 3
+
+    var options3 = {
+        chart: {
+            height: 230,
+            type: 'radialBar',
+            toolbar: {
+                show: true
+            }
+        },
+        plotOptions: {
+            radialBar: {
+                startAngle: -135,
+                endAngle: 225,
+                hollow: {
+                    margin: 0,
+                    size: '70%',
+                    background: '#fff',
+                    image: undefined,
+                    imageOffsetX: 0,
+                    imageOffsetY: 0,
+                    position: 'front',
+                    dropShadow: {
+                        enabled: true,
+                        top: 3,
+                        left: 0,
+                        blur: 4,
+                        opacity: 0.24
+                    }
+                },
+                track: {
+                    background: '#fff',
+                    strokeWidth: '67%',
+                    margin: 0, // margin is in pixels
+                    dropShadow: {
+                        enabled: true,
+                        top: -3,
+                        left: 0,
+                        blur: 4,
+                        opacity: 0.35
+                    }
+                },
+
+                dataLabels: {
+                    showOn: 'always',
+                    name: {
+                        offsetY: -20,
+                        show: true,
+                        color: '#888',
+                        fontSize: '17px'
+                    },
+                    value: {
+                        formatter: function (val) {
+                            return 75 + ' %';
+                        },
+                        color: '#111',
+                        fontSize: '36px',
+                        show: true,
+                    }
+                }
+            }
+        },
+        fill: {
+            colors: ['#FBA706']
+        },
+        series: [75],
+        stroke: {
+            lineCap: 'round'
+        },
+        labels: ['Russia'],
+
+    }
+
+    // Select charts div
+
+    var apexchart = new ApexCharts(
+        document.querySelector("#apexChart1"),
+        options
+    );
+
+    var apexchart2 = new ApexCharts(
+        document.querySelector("#apexChart2"),
+        options2
+    );
+
+
+    var apexchart3 = new ApexCharts(
+        document.querySelector("#apexChart3"),
+        options3
+    );
 
 
 
@@ -346,12 +531,40 @@ window.onload = function () {
 
 
 
-
-
+    //render charts
 
     setTimeout(function () {
         chart.render();
         chart_icome.render();
+
     }, 1000);
+
+
+    var chartIsVisible = false;
+
+
+    $(window).scroll(function () {
+        $('.fade-chart-on-scroll').each(function () {
+            if (isScrolledIntoView($(this)) && chartIsVisible === false) {
+                apexchart.render();
+                apexchart2.render();
+                apexchart3.render();
+                chartIsVisible = true;
+            }
+        });
+    });
+
+    function isScrolledIntoView(elem) {
+        var $elem = $(elem);
+        var $window = $(window);
+
+        var docViewTop = $window.scrollTop();
+        var docViewBottom = docViewTop + $window.height();
+
+        var elemTop = $elem.offset().top;
+        var elemBottom = elemTop + $elem.height();
+
+        return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+    }
 
 }

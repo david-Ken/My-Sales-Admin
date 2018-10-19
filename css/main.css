@@ -152,3 +152,37 @@ svg:not(:root) {
     width: 100%;
     height: inherit;
 }
+
+
+.row-same-height {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-map svg {
+    height: 100%;
+    width: 100%;
+}
+
+.section-recent-order table td {
+    padding: 25px 5px;
+}
+
+
+
+.section-recent-order table tr td:first-child {
+    position: absolute !important;
+    padding: 0;
+}
+
+
+.section-recent-order table .clothes {
+    position: relative;
+    width: 10%;
+    right: 42%;
+    margin: 2px;
+}
+
+.section-recent-order .materialboxed {
+    display: unset;
+}
