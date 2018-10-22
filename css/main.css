@@ -2,6 +2,15 @@ body {
     background-color: #F1F1F1;
 }
 
+.home-title {
+    font-weight: bold;
+}
+
+.home-icon {
+    width: 17%;
+    padding: 2%;
+}
+
 #form1 {
     margin-left: 180px;
 }
@@ -12,7 +21,6 @@ body {
 
 nav .input-field label {
     top: -12%;
-
 }
 
 .section-ecommerce .card-image {
@@ -89,7 +97,6 @@ nav .input-field label {
     background-color: #fff;
 }
 
-
 .section-recent-order table a .new {
     border-radius: 10px !important;
 }
@@ -99,12 +106,10 @@ nav .input-field label {
     text-align: center !important;
 }
 
-
 .section-recent-order table a .badge {
     padding: 4px 6px;
     float: unset;
 }
-
 
 .my-wrapper {
     position: relative;
@@ -144,15 +149,12 @@ nav .input-field label {
     font-size: 5em;
 }
 
-
 /* SVG WORDL MAP */
-
 svg:not(:root) {
     overflow: hidden;
     width: 100%;
     height: inherit;
 }
-
 
 .row-same-height {
     display: flex;
@@ -168,13 +170,10 @@ svg:not(:root) {
     padding: 25px 5px;
 }
 
-
-
 .section-recent-order table tr td:first-child {
     position: absolute !important;
     padding: 0;
 }
-
 
 .section-recent-order table .clothes {
     position: relative;
@@ -187,8 +186,11 @@ svg:not(:root) {
     display: unset;
 }
 
-/** offseting content due to fixed nabar **/
+.title-ecommerce {
+    padding-left: 1%;
+}
 
+/** offseting content due to fixed nabar **/
 header,
 main,
 section,
