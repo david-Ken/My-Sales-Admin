@@ -149,6 +149,21 @@ nav .input-field label {
     font-size: 5em;
 }
 
+.resize-heigth {
+    height: 64px !important;
+    padding: 2% !important;
+}
+
+.my-circle {
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    overflow: hidden;
+    left: 15px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
 /* SVG WORDL MAP */
 svg:not(:root) {
     overflow: hidden;
