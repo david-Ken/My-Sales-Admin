@@ -185,6 +185,16 @@ svg:not(:root) {
     padding: 25px 5px;
 }
 
+
+.flex-it {
+    display: flex !important;
+    flex-wrap: wrap !important;
+}
+
+.give-max-heigth {
+    height: 100%;
+}
+
 .section-recent-order table tr td:first-child {
     position: absolute !important;
     padding: 0;
